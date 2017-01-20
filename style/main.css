@@ -1,0 +1,231 @@
+/* Estilos generales */
+*{
+      box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #5C5C5C;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Tipografías */
+.cursive{
+	font-family: 'Delius Swash Caps', cursive;
+}
+h3{
+      font-size: 2.5em;
+	  color: #ff512f;
+	  font-family: 'Delius Swash Caps', cursive;
+}
+h4{
+      font-size: 1.5em;
+      font-weight: 700;
+}
+p{
+      font-size: 14px;
+}
+
+/* Home */
+.home {
+  padding: 40px 0;
+  height: 100vh;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+.home .container{
+	height: 100%;
+	display: table;
+}
+.home .container .home-text{
+	display: table-cell;
+    vertical-align: middle
+}
+a .home-down{
+	color: #fff;
+}
+.home span.home-down{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 80vh;
+	font-size: 2em;
+	-webkit-animation: homedown 2s infinite;
+  	-moz-animation:    homedown 2s infinite;
+  	-o-animation:      homedown 2s infinite;
+  	animation:         homedown 2s infinite;
+}
+
+/* Botón animación */
+@-webkit-keyframes homedown {
+	from { transform: none; }
+  	50% { transform: scale(1.3); }
+  	to { transform: none; }
+}
+@-moz-keyframes homedown {
+	from { transform: none; }
+  	50% { transform: scale(1.3); }
+  	to { transform: none; }
+}
+@-o-keyframes homedown {
+	from { transform: none; }
+   	50% { transform: scale(1.3); }
+   	to { transform: none; }
+}
+@keyframes homedown {
+	from { transform: none; }
+  	50% { transform: scale(1.3); }
+  	to { transform: none; }
+}
+
+/* Banner mochilero*/
+.mochilero{
+	background:  url(../img/mochilero.jpg) no-repeat;
+	background-position: left top;
+	background-size: cover;
+	padding: 0 40px;
+}
+
+/* Banner libro*/
+.libro{
+	background:  url(../img/libro.jpg) no-repeat;
+	background-position: right bottom;
+	background-size: cover;;
+	padding: 40px;
+}
+@media (min-width: 992px){
+	.libro{
+		background-position: left;
+		padding: 40px 40px 40px 80px;
+	}
+}
+.text{
+	padding: 80px 0 40px 0;
+}
+.banner{
+	padding: 40px 0;
+}
+.banner h3{
+	font-size: 2em;
+}
+.banner p{
+	text-align: justify;
+	font-size: 14px;
+}
+
+/* Zonas */
+.zones {
+	margin: 40px 0;
+}
+.zones-text{
+	margin-bottom: 2em;
+}
+.zones p{
+	font-size: 18px;
+	margin: 1.5em 0;
+}
+/* Lugares individuales */
+.places{
+	background: #ff512f;
+	margin: 10px 0;
+	padding-bottom: 20px;
+}
+.sur{
+	background: #006ab2;
+}
+.places:hover{
+	cursor: pointer;
+}
+.places img{
+	width: 100%;
+}
+.places-text{
+	color: #fff;
+	padding: 10px;
+}
+.places-text p{
+	font-size: 14px;
+}
+
+/* Contacto */
+.contacto{
+	background: url("../img/contact.svg") no-repeat top;
+	background-size: cover;
+	color: #5C5C5C;
+}
+@media (min-width: 992px){
+	.contacto{
+		background-position: center;
+	}
+}
+.contacto .container .row{
+	margin-top: 40px;
+}
+.acerca p{
+		text-align: justify;
+		font-size: 14px;
+}
+/* Formulario de contacto */
+.formulario input, .formulario textarea{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #ff512f;
+	box-sizing: border-box;
+}
+.formulario input.firstname{
+	width: 48%;
+	float: left;
+}
+.formulario input.lastname{
+	width: 48%;
+	float: right;
+}
+.formulario textarea{
+	height: 80px;
+}
+.formulario input.send{
+	height: auto;
+	overflow: hidden;
+	background: #f09819;
+	color: #fff;
+	border-radius: 50px;
+}
+
+/* Footer */
+footer{
+	margin-top: 40px;
+    color: #fff;
+}
+footer input{
+	width: 80%;
+}
+.copyright p{
+      font-size: 12px;
+	  letter-spacing: .1em;
+	  color: #fff;
+}
+
+/* Páginas individuales */
+.home-places {
+  padding: 40px 0;
+  height: 70vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+.text-page{
+	margin: 40px 0;
+	text-align: justify;
+}
+footer.pages{
+	padding-top: 40px;
+	background: #ff512f;
+}
